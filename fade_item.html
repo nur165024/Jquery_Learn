@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+      
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="fadein btn btn-success mt-2" type="submit">FadeIn</button>
+                    <button class="fadeout btn btn-primary mt-2" type="submit">FadeOut</button>
+                    <button class="fadeto btn btn-success mt-2" type="submit">FadeTo</button>
+                    <button class="fadetoggle btn btn-primary mt-2" type="submit">FadeToggle</button>
+
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, provident. Non nam voluptatibus sapiente itaque necessitatibus! Alias sapiente at dolores unde aspernatur ad voluptatibus, impedit voluptatum ea itaque amet natus.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, tenetur!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+           $(".fadein").click(function(){
+               $(".text").fadeIn('slow');
+           });
+
+           $(".fadeout").click(function(){
+               $(".text").fadeOut('slow');
+           });
+
+           $(".fadeto").click(function(){
+               $(".text").fadeTo(1000, .0);
+           });
+
+           $(".fadetoggle").click(function(){
+               $(".text").fadeToggle('slow');
+           });
+        });
+    </script>
+  </body>
+</html>
