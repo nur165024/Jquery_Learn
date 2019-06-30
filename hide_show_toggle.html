@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+      
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="hide btn btn-success mt-2" type="submit">Hide</button>
+                    <button class="show btn btn-success mt-2" type="submit">Show</button>
+                    <button class="toggle btn btn-success mt-2" type="submit">Toggle</button>
+
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, provident. Non nam voluptatibus sapiente itaque necessitatibus! Alias sapiente at dolores unde aspernatur ad voluptatibus, impedit voluptatum ea itaque amet natus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $(".hide").click(function(){
+                $(".text").hide('slow');
+            });
+
+            $(".show").click(function(){
+                $(".text").show('slow');
+            });
+
+            $(".toggle").click(function(){
+                $(".text").toggle('slow')
+            });
+        });
+    </script>
+  </body>
+</html>
