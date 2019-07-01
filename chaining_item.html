@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <style>
+        .animate_item{
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+
+        .animate_item_1 {
+            position: absolute;
+            background: #f80404;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            margin-top: 20px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="chaining_fun btn btn-success my-3" type="submit">Chaning</button>
+
+                    <div class="animate_item">
+                        <div class="animate_item_1">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+           $(".chaining_fun").click(function(){
+                $(".animate_item").css("background", "green").slideUp(1000).slideDown(1000);
+           });
+        });
+    </script>
+  </body>
+</html>
