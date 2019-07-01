@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+      
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="change_value btn btn-success mt-2" type="submit">change Value</button>
+                    
+                    <div>
+                        <a class="nav-link link" title="Training With Live Project" target="_blank" href="http://www.trainingwithliveproject.com">Training With Live Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $(".change_value").click(function(){
+                $(".link").attr({
+                    "href" : "https://github.com/nur165024",
+                    "title" : "GitHub",
+                });
+            });
+        });
+    </script>
+  </body>
+</html>
