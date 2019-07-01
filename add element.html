@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+      
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="append btn btn-primary">append</button>
+                    <button class="prepend btn btn-success">prepend</button>
+                    <button class="before btn btn-primary">Before</button>
+                    <button class="after btn btn-success">After</button>
+
+                    <p class="append_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta assumenda porro aliquid rem omnis molestiae</p>
+
+                    <p class="prepend_text">consectetur adipisicing elit. Expedita sit, velit ad exercitationem mollitia assumenda beatae eligendi et iste ab nihil quae ipsum fugit maiores eos perspiciatis ipsa! Rerum, praesentium quia libero nesciunt</p>
+
+                    <p class="after_before"><span class="text-danger">good</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $(".append").click(function(){
+                $(".append_text").append(" Voluptas non, praesentium, nisi vel totam quam officia dicta nam delectus quasi optio sunt!")
+            });
+            
+            $(".prepend").click(function(){
+                $(".prepend_text").prepend("Lorem ipsum dolor sit amet, ")
+            });
+
+            $(".before").click(function(){
+                $(".after_before").before("nura alam")
+            });
+
+            $(".after").click(function(){
+                $(".after_before").after("boy!")
+            });
+        });
+    </script>
+  </body>
+</html>
