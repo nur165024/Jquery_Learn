@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <style>
+        .text h2{
+            color: brown;
+            font-size: 30px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .text p{
+            color: brown;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+
+        .text_add{
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: capitalize;
+            background-color: #1825db;
+        }
+    </style>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 button_btn">
+                    <button class="btn btn-outline-primary add my-2" type="submit">add class</button>
+                    <button class="btn btn-outline-success remove my-2" type="submit">remove class</button>
+                    <button class="btn btn-outline-primary toggle my-2" type="submit">Toggle class</button>
+
+                    <div class="nnn text">
+                        <h2>hi nura alam</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, soluta.</p>
+                    </div>
+                    <p class="txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, hic ut provident nesciunt mollitia, voluptas distinctio in tempora doloribus incidunt architecto. Qui iste alias quos atque illum unde ducimus ullam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $(".remove").click(function(){
+                $(".text").removeClass();
+            });
+
+            $(".add").click(function(){
+                $(".txt").addClass("text_add");
+            });
+
+            $(".toggle").click(function(){
+                $(".nnn").toggleClass("text");
+            });
+        });
+    </script>
+  </body>
+</html>
