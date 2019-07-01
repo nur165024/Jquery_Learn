@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <style>
+        .button_btn button{
+            background: #ffffff;
+            border: 1px solid #ff0000;
+            padding: 8px 20px;
+        }
+
+        .button_btn .active{
+            background: #ff0000;
+        }
+    </style>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 button_btn">
+                    <button class="active my-2" type="submit">add class</button>
+                    <button class="my-2" type="submit">remove class</button>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+            });
+        });
+    </script>
+  </body>
+</html>
