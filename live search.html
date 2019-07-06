@@ -37,17 +37,48 @@
                                 <td>Otto</td>
                                 <td>@mdo</td>
                             </tr>
+
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
                             </tr>
+
                             <tr>
                                 <th scope="row">3</th>
                                 <td>Larry</td>
                                 <td>the Bird</td>
                                 <td>@twitter</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+
+                            
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>nur alam</td>
+                                <td>alam</td>
+                                <td>@google</td>
                             </tr>
                         </tbody>
                     </table>
@@ -64,10 +95,10 @@
 
     <script>
         $(function(){
-            $("#myInput").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                    $("#myTable tr").filter(function() {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            $("#myInput").on("keyup",function(){
+                var search = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function(){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(search) > -1)
                 });
             });
         });
